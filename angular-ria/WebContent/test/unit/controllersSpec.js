@@ -3,14 +3,15 @@
 /* jasmine specs for controllers go here */
 
 describe('controllers', function(){
-  beforeEach(module('myApp.controllers'));
+  beforeEach(module('angular-ria'));
 
 
   it('should ....', inject(function() {
-    //spec body
+    expect(false).toBe(false);
   }));
 
   it('should ....', inject(function() {
     //spec body
+	  
   }));
 });

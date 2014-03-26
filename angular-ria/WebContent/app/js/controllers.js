@@ -2,10 +2,9 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+var app = angular.module('angular-ria', []);
 
-  }])
-  .controller('MyCtrl2', [function() {
+app.controller('login', [function() {
 
   }]);
+
