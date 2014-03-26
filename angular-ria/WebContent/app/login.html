@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en" ng-app="angular-ria-controllers">
+<html lang="en" ng-app="angular-ria">
 <head>
   <meta charset="utf-8">
   <title>Login</title>
   <link rel="stylesheet" href="css/angular-ria.css"/>
 </head>
 <body ng-controller="LoginController">
-  <div ng-view>
+  <div>
       <ul>
           <li ng-repeat="input in inputs">
               {{input}}
+              <ria-text-input />
           </li>
       </ul>
   </div>
