@@ -2,7 +2,7 @@
 
 /* jasmine specs for services go here */
 
-describe('service', function () {
+describe('service tests', function () {
     beforeEach(module('angular-ria-services'));
 
 

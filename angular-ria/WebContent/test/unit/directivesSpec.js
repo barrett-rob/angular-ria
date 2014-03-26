@@ -2,7 +2,7 @@
 
 /* jasmine specs for directives go here */
 
-describe('directives', function () {
+describe('directive tests', function () {
     beforeEach(module('angular-ria-directives'));
 
     describe('app-version', function () {

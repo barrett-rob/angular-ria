@@ -2,7 +2,7 @@
 
 /* jasmine specs for filters go here */
 
-describe('filter', function() {
+describe('filter tests', function() {
   beforeEach(module('angular-ria-filters'));
 
 
