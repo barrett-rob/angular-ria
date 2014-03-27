@@ -1,19 +1,21 @@
 exports.config = {
-  allScriptsTimeout: 11000,
+    allScriptsTimeout: 11000,
 
-  specs: [
-    '../test/e2e/*.js'
-  ],
+    specs: [
+        '../test/e2e/*.js'
+    ],
 
-  capabilities: {
-    'browserName': 'chrome'
-  },
+    capabilities: {
+        'browserName': 'chrome'
+    },
 
-  baseUrl: 'http://localhost:8000/app/',
+    baseUrl: 'http://localhost:8000',
+    seleniumPort: 4444,
 
-  framework: 'jasmine',
+    framework: 'jasmine',
 
-  jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
-  }
+    jasmineNodeOpts: {
+        showColors: true,
+        defaultTimeoutInterval: 30000
+    }
 };
