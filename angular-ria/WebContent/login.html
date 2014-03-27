@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="angular-ria">
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="app/css/angular-ria.css"/>
+</head>
+<body ng-controller="LoginController">
+  <div>
+      <ul>
+          <li ng-repeat="input in inputs">
+              {{input}}
+              <ria-text-input />
+          </li>
+      </ul>
+  </div>
+
+  <script src="app/lib/angular/angular.js"></script>
+  <script src="app/lib/angular/angular-route.js"></script>
+  <script src="app/js/app.js"></script>
+  <script src="app/js/services.js"></script>
+  <script src="app/js/controllers.js"></script>
+  <script src="app/js/filters.js"></script>
+  <script src="app/js/directives.js"></script>
+</body>
+</html>

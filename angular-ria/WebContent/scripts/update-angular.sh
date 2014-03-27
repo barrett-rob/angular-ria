@@ -19,12 +19,6 @@ rm app/lib/angular/*.zip
 mv app/lib/angular/angular-mocks.js test/lib/angular
 cp app/lib/angular/version.txt test/lib/angular
 
-# Update the inlined angular-loader in app/index-async.html
-sed '/@@NG_LOADER@@/{
-    s/@@NG_LOADER@@//g
-    r app/lib/angular/angular-loader.min.js
-}' app/index-async.html.template > app/index-async.html
-
 git add $ROOT_DIR/app
 git add $ROOT_DIR/test
 git commit -m "update(angular): bump to $VERSION"

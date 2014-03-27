@@ -2,7 +2,7 @@
 
 describe('angular-ria', function () {
 
-    browser.get('/app/login.html');
+    browser.get('/login.html');
 
     it('should automatically load /app/login when directly linked', function () {
         expect(element(by.model('username'))).toBeTruthy;
