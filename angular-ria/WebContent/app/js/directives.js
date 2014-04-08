@@ -16,7 +16,11 @@ v.directive('riaTextInput', [function () {
         link: function (scope, elem, attrs) {
             console.log("Recognized the riaTextInput");
         },
-        template: '<input />'
+        scope: {
+            name: '=',
+            value: '='
+        },
+        templateUrl: 'app/templates/ria-text-input.html'
     };
 }])
 ;
