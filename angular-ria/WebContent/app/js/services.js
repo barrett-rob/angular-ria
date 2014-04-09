@@ -4,4 +4,9 @@
 
 var v = angular.module('angular-ria-services', []);
 
-v.value('version', '0.1');
+v.constant('version', '0.0');
+
+v.factory('bindUrl', function () {
+    // TODO: logic to derive correct bind url based on context
+    return 'http://localhost:8080/ria/bind';
+});
