@@ -12,9 +12,4 @@ describe('service tests', function () {
         }));
     });
 
-    describe('bindUrl', function () {
-        it('should return the correct bind url for debugging', inject(function (bindUrl) {
-            expect(bindUrl).toEqual('http://localhost:8080/ria/bind');
-        }));
-    })
 });
