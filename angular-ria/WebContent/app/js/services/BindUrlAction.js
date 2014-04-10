@@ -1,4 +1,4 @@
-function BindUrlService(log) {
+function BindUrlAction(log) {
     // TODO: logic to derive correct bind url based on context
     return {
         url: function () {

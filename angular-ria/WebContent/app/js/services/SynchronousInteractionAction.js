@@ -1,6 +1,6 @@
 /* Synchronous Interactions with the backend.
  */
-function SynchronousInteractionService(bindUrl, $http, $log, $q) {
+function SynchronousInteractionAction(bindUrl, $http, $log, $q) {
 
     $log.log('creating synchronous interaction service with bind url: ' + bindUrl);
 
