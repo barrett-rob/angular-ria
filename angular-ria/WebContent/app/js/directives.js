@@ -25,3 +25,18 @@ v.directive('riaTextInput', [function () {
 }])
 ;
 
+v.directive('riaButton', [function () {
+    return {
+        restrict: 'E',
+        link: function (scope, elem, attrs) {
+            console.log("Recognized the riaButton");
+        },
+        scope: {
+            name: '@',
+            action: '@'
+        },
+        templateUrl: 'app/templates/ria-button.html'
+    };
+}])
+;
+

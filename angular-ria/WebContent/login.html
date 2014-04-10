@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="app/css/angular-ria.css"/>
 </head>
 <body ng-controller="LoginController">
-<form action="POST">
-    <div class="loginForm" ng-repeat="input in inputs">
-        <ria-text-input name="input" value="input" />
+<div>
+    <div class="pageWidth">
+        <div ng-repeat="input in inputs">
+            <ria-text-input name="input" value="input"/>
+        </div>
+        <ria-button name="login" action="loginService"/>
     </div>
-</form>
+</div>
+
 
 <script src="app/lib/angular/angular.js"></script>
 <script src="app/lib/angular/angular-route.js"></script>
