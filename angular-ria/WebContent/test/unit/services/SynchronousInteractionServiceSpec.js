@@ -33,13 +33,14 @@ describe('synchronous interaction tests', function () {
         }));
 
         it('must return 500 after 500 bind call', inject(function (synchronousInteraction, bindUrl) {
-            $httpBackend.expectPOST(bindUrl.url()).respond(500);
+            $httpBackend.expectPOST(bindUrl.url()).respond(500, { bar: 'bar' });
             var si = synchronousInteraction;
             si.data = {};
             var promise = si.bind();
             $httpBackend.flush();
             promise.then(function (response) {
                 expect(response.status).toEqual(500);
+                expect(response.data).toEqual({ bar: 'bar' });
             });
         }));
     })

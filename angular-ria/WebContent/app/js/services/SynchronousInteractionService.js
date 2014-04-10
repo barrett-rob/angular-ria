@@ -19,7 +19,7 @@ function SynchronousInteractionService(bindUrl, $http, $log, $q) {
             post.error(function (data, status, headers, config) {
                 $log.log('synchronous interaction response error: ' + status);
                 status = status;
-                deferred.resolve({ status: status, data: {} });
+                deferred.resolve({ status: status, data: data });
             });
             return deferred.promise;
         },
