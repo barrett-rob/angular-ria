@@ -13,9 +13,6 @@ v.directive('appVersion', ['version', function (version) {
 v.directive('riaTextInput', [function () {
     return {
         restrict: 'E',
-        link: function (scope, elem, attrs) {
-            console.log("Recognized the riaTextInput");
-        },
         scope: {
             riaName: '=',
             riaValue: '='
@@ -28,12 +25,9 @@ v.directive('riaTextInput', [function () {
 v.directive('riaButton', [function () {
     return {
         restrict: 'E',
-        link: function (scope, elem, attrs) {
-            console.log("Recognized the riaButton");
-        },
         scope: {
             riaName: '@',
-            riaAction: '@'
+            riaAction: '&'
         },
         templateUrl: 'app/templates/ria-button.html'
     };
