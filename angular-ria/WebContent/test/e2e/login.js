@@ -12,9 +12,10 @@ describe('login page tests', function () {
     it('should contain a username and password field', function () {
         var promise = browser.get('/login.html');
         promise.then(function () {
-            expect(element(by.model('username'))).toBeTruthy;
-            expect(element(by.model('password'))).toBeTruthy;
-            expect(element(by.model('bogus-element'))).toBeFalsy;
+            expect(element(by.name('username')).isPresent()).toEqual(true);
+            expect(element(by.name('password')).isPresent()).toEqual(true);
+            expect(element(by.name('login')).isPresent()).toEqual(true);
+            expect(element(by.name('bogus-element')).isPresent()).toEqual(false);
         });
     });
 });

@@ -17,8 +17,8 @@ v.directive('riaTextInput', [function () {
             console.log("Recognized the riaTextInput");
         },
         scope: {
-            name: '=',
-            value: '='
+            riaName: '=',
+            riaValue: '='
         },
         templateUrl: 'app/templates/ria-text-input.html'
     };
@@ -32,8 +32,8 @@ v.directive('riaButton', [function () {
             console.log("Recognized the riaButton");
         },
         scope: {
-            name: '@',
-            action: '@'
+            riaName: '@',
+            riaAction: '@'
         },
         templateUrl: 'app/templates/ria-button.html'
     };
